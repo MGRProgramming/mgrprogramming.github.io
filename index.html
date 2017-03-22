@@ -1,14 +1,263 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title></title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width">
-	</head>
-	<body>
-		<h1>Website for MGRProgramming</h1>
-		<p>inital edit</p>
-	</body>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/images/bridge3.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" style="padding: 4px 16px;">
+			<img src="images/MGRProgrammingLogo.png" style="height: 48px">
+		</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Über uns</a>
+      <a href="#tools" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Werkezuge</a>
+<!--
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+-->
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Kontakt</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-right w3-hide-medium w3-hide-large" style="display:none; right:0" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Über uns</a>
+  <a href="#tools" onclick="w3_close()" class="w3-bar-item w3-button">Werkzeuge</a>
+<!--
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+-->
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Kontakt</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">&nbsp;<br>Brücken bauen <br>heute</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">&nbsp;<br>Brücken bauen <br>heute</span><br>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <a href="https://twitter.com/mgrprogramming" target="link" class="w3-hover-text-white">
+			<i class="fa fa-twitter"></i></a>
+    <a href="https://plus.google.com/s/mgrprogramming" target="link" class="w3-hover-text-white">
+			<i class="fa fa-google-plus"></i></a>
+    <a href="mailto:mgrprogramming@gmail.com" class="w3-hover-text-white">
+			<i class="fa fa-envelope"></i>
+		</a>
+		
+		
+<!--
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-flickr"></i></a>
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-linkedin"></i></a>
+-->
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">Über MGRProgramming</h3>
+  <p class="w3-center w3-large">Unsere Werte</p>
+	<div class="w3-row-padding w3-center" style="margin-top:64px">
+		<div class="w3-third">
+			<i class="fa fa-users w3-margin-bottom w3-jumbo"></i>
+			<p class="w3-large">Gesellschaft</p>
+			<p>Unsere Projekte helfen Menschen</p>
+		</div>
+		<div class="w3-third">
+			<i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+			<p class="w3-large">Passion</p>
+			<p>Wir lieben was wir machen.</p>
+		</div>
+		<div class="w3-third">
+			<i class="fa fa-bolt w3-margin-bottom w3-jumbo w3-center"></i>
+			<p class="w3-large">Innovation</p>
+			<p>Neue Methoden nutzen wir</p>
+		</div>
+	</div>			
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div>
+      <h3>Wir kennen erweitertes Webdesign!</h3>
+      <p>Einfacher soll es gehen, mit den Informationen aus dem Netz. Einfacher Zugang, einfache Navigation, einfache Nutzung und einfache Programmierung.</p>
+      <p>Klare Struktur und einfache Bedienung, schneller Zugang zu Informationen und Anpassung and die Wünsche des Nutzers machen unsere Web-Apps erfolgreich</p>
+			<p>Unsere Progressive Web Apps (PWA) bieten mehr als installierte Programme: Nutzer starten Sie mit einem Click auf einen Link. Genauso können sie Informationen aus der Web-App teilen - mit nur einem Link den der nächste aufruft.</p>
+			<p>PWAs laden schneller und können Funktionen von Geräten nutzen (z.B. Geodaten, Notifications, Kamera, Bluetooth). Beim Programmieren sind sie OS &amp; Shop unabhängig, einfacher zu erstellen und pflegen und können schneller aktualisiert werden.</p>
+			<p>Weniger Programmierung - mehr Fokus auf die Anwendung &amp; Vorteile für den Nutzer!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="tools">
+  <h3 class="w3-center">UNSERE WERKZEUGE</h3>
+  <p class="w3-center w3-large">Womit wir Arbeiten - modern, effektiv, effizient</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2 w3-center">
+        <img src="/images/HTML5.png" alt="HTML5" style="height:150px;">
+        <div class="w3-container">
+          <h3>HTML5</h3>
+          <p class="w3-opacity">Das Fundament</p>
+          <p>HTML ist die Karosse, JavaScript der Antrieb und CSS der Chique für Web-Apps.<br>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2 w3-center">
+        <img src="/images/Polymer.png" alt="Polymer" style="height:150px;">
+        <div class="w3-container">
+          <h3>Polymer</h3>
+          <p class="w3-opacity">Die Struktur</p>
+          <p>Mit Polymer läßt sich HTML5 (HTML, CSS und Javascript) in modularen Bausteinen (wieder)verwenden.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2 w3-center">
+        <img src="/images/PWA.png" alt="PWA" style="height:150px;">
+        <div class="w3-container">
+          <h3>Progressive Web Apps</h3>
+          <p class="w3-opacity">Der Turbo</p>
+          <p>PWAs speichern Webseiten und Daten beim Kunden. Beim nächsten Aufruf sind sie sofort da, müssen nicht heruntergeladen werden.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2 w3-center">
+        <img src="/images/Firebase.png" alt="Firebase" style="height:150px;">
+        <div class="w3-container">
+          <h3>Firebase</h3>
+          <p class="w3-opacity">Die Quelle</p>
+          <p>Unser Web-Apps nutzen Daten. Firebase strukturiert sie, bietet Authentification und Datenschutz.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">KONTAKT</h3>
+  <p class="w3-center w3-large">Lernen wir uns kennen - Senden Sie uns eine Nachricht:</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Leipzig, US</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +49 172 8220075</p>
+      <p>
+				<a href="mailto:mgrprogramming@gmail.com">
+				<i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mgrprogramming@gmail.com
+				</a>
+			</p>
+      <br>
+    </div>
+    <div class="w3-half">
+<!--
+      <form action="/action_page.php" target="_blank" >
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+-->
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://twitter.com/mgrprogramming" target="link" class="w3-hover-text-light-blue">
+			<i class="fa fa-twitter"></i></a>
+    <a href="https://plus.google.com/s/mgrprogramming" target="link" class="w3-hover-text-light-blue">
+			<i class="fa fa-google-plus"></i></a>
+    <a href="mailto:mgrprogramming@gmail.com" class="w3-hover-text-light-blue">
+			<i class="fa fa-envelope"></i>
+		</a>
+<!--
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-flickr w3-hover-text-red"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+-->
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
 </html>
