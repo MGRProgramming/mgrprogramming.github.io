@@ -19,12 +19,24 @@ body, html {
 .bgimg-1 {
     background-position: center;
     background-size: cover;
-    background-image: url("/images/bridge3.jpg");
+    background-image: url("images/bridge3.jpg");
     min-height: 100%;
 }
 .w3-bar .w3-button {
     padding: 16px;
 }
+	.cardsWrapper {
+		margin-top:64px; 
+		display: flex; 
+		flex-direction: row;  
+		align-items: stretch;"		
+	}
+	
+	@media screen and (max-width: 990px) {
+		.cardsWrapper {
+			flex-wrap: wrap;
+		}
+	}
 </style>
 <body>
 
@@ -38,10 +50,8 @@ body, html {
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">Über uns</a>
       <a href="#tools" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Werkezuge</a>
-<!--
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
--->
+      <a href="#experience" class="w3-bar-item w3-button"><i class="fa fa-eye"></i> Erfahrung</a>
+      <a href="#projects" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Projekte</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Kontakt</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -57,10 +67,8 @@ body, html {
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Über uns</a>
   <a href="#tools" onclick="w3_close()" class="w3-bar-item w3-button">Werkzeuge</a>
-<!--
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
--->
+  <a href="#experience" onclick="w3_close()" class="w3-bar-item w3-button">Erfahrung</a>
+  <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">Projekte</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Kontakt</a>
 </nav>
 
@@ -132,51 +140,87 @@ body, html {
 <div class="w3-container" style="padding:128px 16px" id="tools">
   <h3 class="w3-center">UNSERE WERKZEUGE</h3>
   <p class="w3-center w3-large">Womit wir Arbeiten - modern, effektiv, effizient</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card-2 w3-center">
-        <img src="/images/HTML5.png" alt="HTML5" style="height:150px;">
-        <div class="w3-container">
-          <h3>HTML5</h3>
-          <p class="w3-opacity">Das Fundament</p>
-          <p>HTML ist die Karosse, JavaScript der Antrieb und CSS der Chique für Web-Apps.<br>&nbsp;</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card-2 w3-center">
-        <img src="/images/Polymer.png" alt="Polymer" style="height:150px;">
-        <div class="w3-container">
-          <h3>Polymer</h3>
-          <p class="w3-opacity">Die Struktur</p>
-          <p>Mit Polymer läßt sich HTML5 (HTML, CSS und Javascript) in modularen Bausteinen schnell und preisgünstig (wieder)verwenden.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card-2 w3-center">
-        <img src="/images/PWA.png" alt="PWA" style="height:150px;">
-        <div class="w3-container">
-          <h3>Progressive Web Apps</h3>
-          <p class="w3-opacity">Der Turbo</p>
-          <p>PWAs speichern Design und Daten beim Kunden. Beim nächsten Aufruf sind sie sofort verfügbar, müssen nicht heruntergeladen werden.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card-2 w3-center">
-        <img src="/images/Firebase.png" alt="Firebase" style="height:150px;">
-        <div class="w3-container">
-          <h3>Firebase</h3>
-          <p class="w3-opacity">Die Quelle</p>
-          <p>Unser Web-Apps nutzen Daten. Firebase strukturiert sie, bietet Authentification und Datenschutz.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="w3-row-padding cardsWrapper">
+		<div class="w3-col l4 w3-card-2 w3-center w3-padding w3-margin-small">
+			<img src="images/HTML5.png" alt="HTML5" style="height:150px;">
+			<div class="w3-container">
+				<h3>HTML5</h3>
+				<p class="w3-opacity">Das Fundament</p>
+				<p>HTML ist die Karosse, JavaScript der Antrieb und CSS der Chique für Web-Apps.<br>&nbsp;</p>
+			</div>
+		</div>
+		<div class="w3-col l4 w3-card-2 w3-center w3-center w3-padding w3-margin-small">
+			<div class="w3-container">
+        <img src="images/Polymer.png" alt="Polymer" style="height:150px;">
+				<h3>Polymer</h3>
+				<p class="w3-opacity">Die Struktur</p>
+				<p>Mit Polymer läßt sich HTML5 (HTML, CSS und Javascript) in modularen Bausteinen schnell und preisgünstig (wieder)verwenden.</p>
+			</div>
+		</div>
+		<div class="w3-col l4 w3-card-2 w3-center w3-padding w3-margin-small">
+			<div class="w3-container">
+        <img src="images/PWA.png" alt="PWA" style="height:150px;">
+				<h3>Progressive Web Apps</h3>
+				<p class="w3-opacity">Der Turbo</p>
+				<p>PWAs speichern Design und Daten beim Kunden. Beim nächsten Aufruf sind sie sofort verfügbar, müssen nicht heruntergeladen werden.</p>
+			</div>
+		</div>
+		<div class="w3-col l4 w3-card-2 w3-center w3-padding w3-margin-small">
+			<img src="images/Firebase.png" alt="Firebase" style="height:150px;">
+			<div class="w3-container">
+				<h3>Firebase</h3>
+				<p class="w3-opacity">Die Quelle</p>
+				<p>Unser Web-Apps nutzen Daten. Firebase strukturiert sie, bietet Authentification und Datenschutz.</p>
+			</div>
+		</div>
+	</div>
 </div>
 
 
+<!-- Experience Section -->
+	<div class="w3-container w3-light-grey" style="padding:128px 16px" id="experience">
+		<h3 class="w3-center">ERFAHRUNGEN</h3>
+		<p class="w3-center w3-large">Angefangen hat alles mit Basic, dBase, C, TurboPascal...</p>
+			<div class="w3-row-padding cardsWrapper">
+			<div class="w3-col l4 w3-card-2 w3-center w3-padding w3-margin">
+				<h3>Aktive</h3>
+				<p>Auth, API, CSS, Firebase, Geolocation, HTML5,  Material Design, Javascript, Polymer, Maps</p>
+			</div>
+			<div class="w3-col l4 w3-card-2 w3-center w3-center w3-padding w3-margin">
+				<h3>Nutzung bei Projektarbeit</h3>
+				<p>php, mySQL, git, gulp</p>
+			</div>
+			<div class="w3-col l4 w3-card-2 w3-center w3-padding w3-margin">
+				<h3>Einblick</h3>
+				<p>Typescript, React, SASS, w3, materialize, bootstrap</p>
+			</div>
+		</div>
+	</div>
+<!-- Experience Section -->
+	<div class="w3-container" style="padding:128px 16px" id="projects">
+		<h3 class="w3-center">PROJEKTE</h3>
+		<p class="w3-center w3-large"></p>
+		<div class="w3-row-padding cardsWrapper">
+			<div class="w3-col l4 w3-card-2 w3-center w3-padding w3-margin">
+				<a href="https://www.damawi.de" target="_blank">
+					<img src="images/Projekte/damawiTwitter.jpg" alt="DaMaWi.de" style="height:150px;">
+				</a>
+				<h3>DaMaWi.de</h3>
+				<p>Das Machen Wir - Ausflugsziele für Kinder und Familien</p>
+			</div>
+			<div class="w3-col l4 w3-card-2 w3-center w3-center w3-padding w3-margin">
+				<a href="https://online-memory.firebaseapp.com/" target="_blank">
+					<img src="images/Projekte/memory-leipzig-gplus.png" alt="Online-Memory" style="height:150px;">
+				</a>
+				<h3>Online-Memory</h3>
+				<p>Studie zum Möglichekeiten von Progressive Web Apps</p>
+			</div>
+			<div class="w3-col l4 w3-card-2 w3-center w3-padding w3-margin">
+				<h3>und mehr</h3>
+				<p>...</p>
+			</div>
+		</div>
+	</div>
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
   <h3 class="w3-center">KONTAKT</h3>
